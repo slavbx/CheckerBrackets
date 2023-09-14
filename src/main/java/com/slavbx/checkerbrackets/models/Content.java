@@ -6,7 +6,6 @@ import org.springframework.stereotype.Component;
 public class Content {
     String text;
 
-
     public Content() {
     }
 

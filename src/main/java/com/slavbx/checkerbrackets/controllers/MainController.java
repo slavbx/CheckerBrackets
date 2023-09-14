@@ -22,7 +22,6 @@ public class MainController {
 
     @PostMapping("/checkBrackets")
     public ResponseEntity<?> checkBrackets(@RequestBody Content content) {
-        System.out.println("content = " + content.getText());
         if(content.getText() == null || content.getText().equals("")) {
             return new ResponseEntity<>(new Content("Empty text was received!"), HttpStatus.BAD_REQUEST);
         } else {
